@@ -1,0 +1,278 @@
+User
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dazeller Beauty Products</title>
+    <style>
+        /* Stylesheet for Dazeller Beauty landing page */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* New background color */
+        }
+  
+        header {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            color: #333;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        section h2 {
+            margin-bottom: 20px;
+        }
+        
+        section p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        
+        .products-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .product {
+            width: calc(25% - 20px); /* 25% width for each product with 20px margin */
+            margin-bottom: 40px;
+            transition: transform 0.3s;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .product:hover {
+            transform: scale(1.05);
+        }
+        
+        .product img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #555;
+        }
+        
+        .testimonial {
+            margin-top: 50px;
+            text-align: center;
+        }
+        
+        .testimonial img {
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial p {
+            font-style: italic;
+        }
+        
+        .contact {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+        
+        .contact p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .contact-info-item {
+            flex: 1;
+            padding: 0 20px;
+            max-width: 300px;
+            text-align: left;
+        }
+        
+        .contact-info-item h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Dazeller Beauty</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Discover the Beauty with Dazeller Products</h2>
+            <p>Embrace Beauty in Every Detail with Dazeller's Luxurious Creations.</p>
+            <p>Discover the Magic of Beauty with Dazeller's Timeless Formulas.</p>
+            <div style="display: flex; justify-content: center;">
+                <img src="https://www.shutterstock.com/image-photo/make-products-prsented-on-white-260nw-1885493167.jpg" alt="Beauty" style="max-width: 40%; border-radius: 50%; margin-bottom: 20px;">
+            </div>
+            <a href="#products" class="btn">Explore Products</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Dazeller Beauty</h2>
+            <p>At Dazeller Beauty, we are passionate about enhancing natural beauty and empowering individuals to feel confident in their own skin. With a dedication to quality and innovation, we craft each of our products with care, using the finest ingredients and the latest advancements in beauty technology.</p>
+            <p>Our journey began with a simple belief: that beauty should be inclusive and accessible to all. From our luxurious serums and creams to our revitalizing masks and lip balms, every Dazeller product is designed to celebrate diversity and inspire self-expression.</p>
+            
+            <img src="https://www.shutterstock.com/image-photo/professional-makeup-brushes-tools-products-260nw-445895788.jpg" alt="About Dazeller" style="max-width: 100%; border-radius: 10px; margin-top: 40px;">
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="products-container">
+                <div class="product">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAnwMBIgACEQEDEQH/xAAcAAEAAwADAQEAAAAAAAAAAAAABQYHAQMEAgj/xABKEAABAwIEAgMJCgoLAAAAAAAAAQIDBBEFBgchEjETUbIiMmFjcYGRsbMjJ0Fic3ShwcLwFSUmM0JTgpKj0RQWNDU2RFJUZHKi/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAECBAMF/8QAIhEBAAIBAwQDAQAAAAAAAAAAAAECAwQRMSEyM0ESI0Ii/9oADAMBAAIRAxEAPwDcQAAAAAAAAuwOF5AfL5GM79yN8q2Op1dSNWzqqBF6lkQxPHIVxDUzMUFU+SWKJ8KRsc9bMvG1Vsl9iEz/AEiYNh1NNQK6F0k3Aq8SrtwqvJdvgJ26bu1cMzX5P0O2tpHLZtVAq+CRDua9rku1yKngUw/KmB0eI4NSVNXE6SSSJr3L0jkuqp1XOcEY7DtXMAoqSWaKmkjmV8KSu4Xe5Sc0VfAJjpuWwzWvybiACHEAAAAAAAAAAAAAAAAAAGI1C++jmj5SH2aERq2v4ookS39pv/5cS0zvfOzSvjYU/hoQerD+LDaNPH/ZcW/LdTwrrkhvDlqh+bs82xEUy+/Vl236ub2UhLZHW+XKNL/5dvqIel21qy98nN7OQme2Fs3jbeACjzwAAAAAAAAAAAAAAAAAAYVUuVNSs1LzXp4+whBaorxUNInjvsqTdQttSM1fOI+wV/U196akYn6y/wBCk+m7H4V0yTM5uBUieIb6jwUDuLWfLq/Em9nIduTn/iWkTxDfUefDFvrNl7/pN7KQtPatm8TdQAUeeAAAAAAAAAAAAAAAABeQC8gPzdjsrmaoY8jXvS9Q66I5UvZG2PHnJqPwpsj7ue2RERXLexZNXnOhz43o14UfBCq8KIl93IvqQrObX9Hg6Oa1l+NvfNRyehSzVit9cwtGVkZ+CKTgRU9yTk5eoZeVE1UwByp3XHO268/zL/v5zrynFHNgkL5GIqpEi7bJy6k2JvTNE/ro9bbpSSduxM8L5rfXENfOQCjEAAAAAAAAAAAAAAAABQFAwbWdPy7p/DTRdp5Vs4f3K1Ot7S4avoiah4deNknHDC1Gvvwrd7k3t5Tx5mwH8M0NVGxY6eSGdVYyGC6tbbaNbWu7fwry+NaLX+PLRi7Jd2S98Ai+RT1Expl/jabq/ob/AGhxlrBXUGGuonPXjjbwukfEqKnct24UVd+fwnp0/ghps7KyKbpnrQOc9yW4UVX8kt/P4U86MkW6Qtm61hrAAJZQAAAAAAAAAAAAAAAAAKBiurFZDQZ/opamDp43USM4NtlVy77lbxKswuioo5KymdPCxHN4W08aOXiXa+9lty3JXXK6Z0w+/wDtmdtxU81LfBf2kItSJaMXbK55VloH4AzooF71y3dGjboqqqXRrk5XTl1Ezp5UwyZwWGCBsaJTSOR1t932t5NvvcqmTXKmXo/kvqJ3TJfy5X5pJ21JikQtm7IbOAAygAAAAAAAAAAAAAAAAUADKcz4PQ41qLW0+JxLKyLDkli7tUViord0t5VOmvyFhdfTdDJJUtZdF7l6fWhL4tZuptT8bCFv+80k2d4hm1N7V22lt0sRMTug8Nyfh+G0TaeGSd0aJbu3Iu3oPFQ4dT4dqXl6Oha6Nj6d75O7Xu14ZufoT0FrlcqR+YgKdeLUvAE6qR/ZlJ017W33k1URFY2aeADQxAAAAAAAAAAAAAAAAAAAznGttTn9S4S77/QSjO8IzMFm6mRr/qwt6fQ9fqJKNe4Mmq9N2j9vqf8ANr5CvUq21OwFP+I/syk/Ovua+Qr1G5HaoYEiLulG+/7kpOk9p1fENUABqYAAAAAAAAAAAAAAAAAAAZbqE+SnznS1Ed0clM1Lp5X+u6oT1BT1FVTtkiVtlT9K6KS+YMr0OOPbNOssVSxvC2aN3wc7KnJTxJlOVKZtO6sjljat0V8Nl8/CqX85W1K2j+odKZLU4l1VVBVtgc+R0aNRP0VuqmdZSnmdqpSSTyK5XSyRtS97J0LvQibmlMynIyOVsdXFEsqWe5sPEqp+0tj7wHJGFYNWpXsa+esS6pLIveqqWVURNr22Fa1rxBfJa/MrOACzmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/9k=" alt="Product 1">
+                    <h3>Dazeller Beauty Serum</h3>
+                    <p>Revitalize your skin with our Dazeller Beauty Serum, formulated to enhance radiance and hydration.</p>
+                </div>
+                <div class="product">
+                    <img src="data:image/jpeg;base64,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" alt="Product 2">
+                    <h3>Dazeller Moisturizing Cream</h3>
+                    <p>Keep your skin hydrated and nourished with our Dazeller Moisturizing Cream, enriched with natural extracts.</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwCQMDby_YwBZQc7I9Cbehc3vHhd-g3brDanlgUGcAKDX1Kw-p6iWCo33Zhw&s" alt="Product 3">
+                    <h3>Dazeller Brightening Face Mask</h3>
+                    <p>Get a radiant glow with our Dazeller Brightening Face Mask, infused with skin-brightening ingredients.</p>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/51-p4lRzatL.jpg" alt="Product 4">
+                    <h3>Dazeller Lip Balm</h3>
+                    <p>Keep your lips soft and moisturized with our Dazeller Lip Balm, available in various delicious flavors.</p>
+                </div>
+            </div>
+        </div>
+        <section class="testimonial">
+            <div class="container">
+                <h2>Customer Testimonials</h2>
+                <div class="testimonial">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User 1">
+                    <p>"I adore Dazeller Beauty Serum! It has transformed my skin texture."</p>
+                </div>
+                <div class="testimonial">
+                    <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="User 2">
+                    <p>"Dazeller Moisturizing Cream is my go-to product. It keeps my skin hydrated all day long."</p>
+                </div>
+                <div class="testimonial">
+                    <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="User 3">
+                    <p>"The Dazeller Brightening Face Mask gives my skin an instant boost of radiance. I love how refreshed and glowing my complexion looks after each use."</p>
+                </div>
+            </div>
+        </section>
+        
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback? Reach out to us!</p>
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <h3>Address</h3>
+                    <p>123 Beauty Avenue<br> Dazeller City<br> Beautyland</p>
+                </div>
+                <div class="contact-info-item">
+                    <h3>Email</h3>
+                    <p>info@dazellerbeauty.com</p>
+                </div>
+                <div class="contact-info-item">
+                    <h3>Phone</h3>
+                    <p>+1234567890</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dazeller Beauty. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 50,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
